@@ -7,89 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Tustin's home on the web">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <style>
-        :root {
-            --light: #e9e9e9;
-            --dark: #262626;
-            --link: #6CA6C1;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            html {
-                background: var(--dark);
-                color: var(--light);
-            }
-
-            svg {
-                fill: var(--light);
-            }
-        }
-
-        @media (prefers-color-scheme: light) {
-            html {
-                background: var(--light);
-                color: var(--dark);
-            }
-
-            svg {
-                fill: var(--dark);
-            }
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--link);
-        }
-
-        svg {
-            --size: 3.5rem;
-            height: var(--size);
-            width: var(--size);
-        }
-
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            margin: 0 .5em;
-        }
-
-        li#discord {
-            cursor: pointer;
-        }
-
-
-        container {
-            display: grid;
-            grid-template-columns: repeat(2, 50%);
-        }
-
-        body {
-            margin: 1em auto;
-            max-width: 40em;
-            padding: 0 .62em;
-            font: 1.2em/1.62 sans-serif;
-        }
-
-        h1 {
-            line-height: 1.2;
-        }
-
-        h2 {
-            line-height: 1.5;
-        }
-
-        @media print {
-            body {
-                max-width: none
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="code.css">
 </head>
 <article>
     <header>
@@ -98,7 +16,7 @@
     </header>
     <section>
         <h2>Code</h2>
-        <ul>
+        <ul class="horizontal">
             <li><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>PHP</title>
                     <path
@@ -136,7 +54,7 @@
                 </svg></li>
         </ul>
         <h2>Contact</h2>
-        <ul>
+        <ul class="horizontal">
             <li><a href="https://github.com/Tustin" target="_blank" rel="noopener"><svg role="img" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <title>GitHub</title>
@@ -187,6 +105,33 @@
             <li>Corsair RM750e</li>
             <li>Thermalright Peerless Assassin 120 SE</li>
             <li>4x Corsair SP120 Elite fans</li>
+        </ul>
+
+        <h3>Bicycle</h3>
+        <p>I have many bicycles, but this is my favorite one that I've built up.</p>
+
+        <p>1995 Specialized Hardrock GX Sport</p>
+        <img src="bicycle.jpg" alt="My bicycle" style="width: 100%;" />
+        <ul>
+            <li>Shimano Acera X rear derailleur (spec) - 7 speed</li>
+            <li>Shimano 11-28 7 speed cassette (maybe spec -- I didn't replace it)</li>
+            <li>Shimano Exage Country front derailleur (triple). Took this off another bicycle but I still have the original front d</li>
+            <li>Shimano Biopace triple chainring 48/38/28. Used to have 42/34/24 but I swapped it out because slow af!! Came from same bicycle as the front d</li>
+            <li>Shimano Exage Country cranks (i think -- it was from the other bicycle too). 175mm</li>
+            <li>Araya VP-20 rear wheel w/ Shimano Acera X hub (spec)</li>
+            <li>Alex Y2000 front wheel w/ unknown hub. This was replaced before I bought it and I will eventually have a matching wheelset again</li>
+            <li>Maxxis DTH 26x2.15 tires</li>
+            <li>FSA Adventure 46cm wide bars. 12° flared drops</li>
+            <li>Profile Designs 1 inch to 1 1/8 inch threadless stem converter</li>
+            <li>Random Chinese 70mm stem with 35° angle (these bicycles have really short headtubes)</li>
+            <li>MicroNew 3x7 brifters. Works great!!</li>
+            <li>Supacaz super kush bar tape</li>
+            <li>Shimano Altus front and rear canti brakes. Kool Stop eagle claw pads.</li>
+            <li>Origin8 zero setback seatpost (helps with reach)</li>
+            <li>Currently have Fabric Scoop Elite 142mm saddle on but I swap this a lot. In the pic is a Specialized Bridge 143mm saddle. Both are good.</li>
+            <li>PNW composite pedals</li>
+        </ul>
+        
     </section>
 </article>
 
