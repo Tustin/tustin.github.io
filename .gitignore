@@ -3,7 +3,6 @@ Thumbs.db
 node_modules/
 public/
 .deploy*/
-resources/
 scaffolds/
 themes/
 source/
