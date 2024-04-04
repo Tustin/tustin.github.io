@@ -1,0 +1,231 @@
+<head>
+  <title>Tesseract - Panel</title>
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/panel.css" />
+  <link
+    rel="stylesheet"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="http://www.dreamtemplate.com/dreamcodes/social_icons/tsc_social_icons.css"
+  />
+</head>
+<style>
+  .author {
+    display: block;
+    font-size: 90%;
+    color: #666;
+    margin-bottom: 7px;
+  }
+  .content {
+    font-size: 110%;
+  }
+  .news-title {
+    margin: 17px 0px 0px;
+  }
+</style>
+
+<body>
+  <div id="wrapper">
+    <nav
+      id="nav"
+      class="navbar navbar-inverse navbar-fixed-top nav-tustin"
+      role="navigation"
+      style="margin-bottom: 0px"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggle pull-left"
+          data-toggle="collapse"
+          data-target=".user-collapse"
+        >
+          <span class="glyphicon glyphicon-user" style="color: white"></span>
+        </button>
+        <button
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target=".sidebar-collapse"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse user-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a
+              href="#"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              ><i class="fa fa-user"></i>
+              <b> <?php echo htmlspecialchars($user['username']); ?></b>
+              <span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Account</li>
+              <li>
+                <a href="http://manage.tusticles.com/panel.php"
+                  ><i class="fa fa-list-ul"></i> Panel</a
+                >
+              </li>
+              <li>
+                <a href="http://manage.tusticles.com/settings.php"
+                  ><i class="fa fa-cog"></i> Account Settings</a
+                >
+              </li>
+              <li role="separator" class="divider"></li>
+              <li>
+                <a href="http://manage.tusticles.com/index.php?do=logout"
+                  ><i class="fa fa-sign-out"></i> Sign Out</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse sidebar-collapse">
+        <ul class="nav navbar-nav side-nav">
+          <li>
+            <a href="panel.html"><i class="fa fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="http://www.tusticles.com/tesseract/"
+              ><i class="fa fa-cloud-download"></i> Download</a
+            >
+          </li>
+          <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#tickets"
+              ><i class="fa fa-ticket"></i> Tickets</a
+            >
+            <ul id="tickets" class="collapse">
+              <li>
+                <a href="http://manage.tusticles.com/tickets.php?action=new"
+                  ><i class="fa fa-pencil"></i> Submit New Ticket</a
+                >
+              </li>
+              <li>
+                <a href="http://manage.tusticles.com/tickets.php?action=view"
+                  ><i class="fa fa-file-text"></i> My Tickets</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="http://manage.tusticles.com/settings.php"
+              ><i class="fa fa-cogs"></i> Account Settings</a
+            >
+          </li>
+          <li>
+            <a href="http://manage.tusticles.com/keys.php"
+              ><i class="fa fa-key"></i> Key Management</a
+            >
+          </li>
+          <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#options"
+              ><i class="fa fa-wrench"></i> Server Options</a
+            >
+            <ul id="options" class="collapse">
+              <li>
+                <a href="http://manage.tusticles.com/keys.php?action=add"
+                  ><i class="fa fa-plus-square"></i> Add New Key</a
+                >
+              </li>
+
+              <li>
+                <a href="http://manage.tusticles.com/update.php"
+                  ><i class="fa fa-pencil-square-o"></i> Update Menu</a
+                >
+              </li>
+
+              <li>
+                <a href="http://manage.tusticles.com/log.php"
+                  ><i class="fa fa-list-alt"></i> Log</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="page-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">
+              Tesseract Management
+              <small
+                >Welcome,
+                <?php echo $user['username'] ?></small
+              >
+            </h1>
+          </div>
+        </div>
+        <!-- row -->
+        <div class="col-md-9">
+          <div class="row">
+            <div
+              class="alert alert-info alert-dismissible fade in"
+              role="alert"
+            >
+              <button
+                type="button"
+                class="close"
+                data-dismiss="alert"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">x</span>
+              </button>
+              <strong>Up to date! <i class="fa fa-smile-o"></i></strong> You'll
+              be notified here when new updates are launched, along with an
+              e-mail sent to the e-mail you registered with.
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h3 class="news-title"><?php echo $notice['title'] ?></h3>
+                <span class="author"
+                  >Posted by <b><?php echo $notice['author'] ?></b> at
+                  <b><?php echo $notice['time'] ?></b></span
+                >
+                <p class="content"><?php echo $notice['body'] ?></p>
+              </div>
+            </div>
+          </div>
+          <!-- news row -->
+        </div>
+        <!-- col-md-9 -->
+        <div class="col-md-3">
+          <div class="panel panel-main">
+            <div class="panel-heading">
+              <div class="panel-title text-center">My Open Tickets</div>
+            </div>
+            <div class="panel-body">
+              <center><h4>No active tickets</h4></center>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- col-md-10 -->
+    </div>
+    <!-- container-fluid -->
+  </div>
+
+  <script
+    type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"
+  ></script>
+</body>
