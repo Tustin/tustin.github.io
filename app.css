@@ -1,0 +1,429 @@
+/* 90s TILED STARFIELD BACKGROUND */
+body {
+  background-color: #000080;
+  background-image: radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  color: #00ff00;
+  font-family: "Comic Sans MS", "Chalkboard SE", cursive;
+  margin: 0;
+  padding: 20px;
+}
+
+/* MAIN CONTAINER - BEVELED TABLE LOOK */
+.main-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #c0c0c0 0%, #808080 100%);
+  border: 4px outset #c0c0c0;
+  padding: 0;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* HEADER BAR */
+.header-bar {
+  background: linear-gradient(to right, #000080, #0000ff, #000080);
+  padding: 10px;
+  text-align: center;
+  border-bottom: 3px ridge #808080;
+}
+
+.header-bar h1 {
+  font-family: "Times New Roman", serif;
+  color: #ffff00;
+  text-shadow: 3px 3px #ff0000, -1px -1px #00ffff;
+  font-size: 3em;
+  margin: 0;
+  animation: rainbow 2s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #ff0000;
+  }
+  16% {
+    color: #ff8800;
+  }
+  33% {
+    color: #ffff00;
+  }
+  50% {
+    color: #00ff00;
+  }
+  66% {
+    color: #00ffff;
+  }
+  83% {
+    color: #ff00ff;
+  }
+  100% {
+    color: #ff0000;
+  }
+}
+
+/* MARQUEE STYLING */
+.marquee-container {
+  background: #000000;
+  padding: 8px;
+  border-top: 2px inset #808080;
+  border-bottom: 2px inset #808080;
+  overflow: hidden;
+}
+
+.marquee-text {
+  color: #ff00ff;
+  font-size: 1.1em;
+  font-weight: bold;
+  animation: marquee 15s linear infinite;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* CONTENT AREA */
+.content {
+  background: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  border: 3px inset #808080;
+}
+
+.content h2 {
+  font-family: "Times New Roman", serif;
+  color: #ff0000;
+  text-align: center;
+  border-bottom: 3px double #000080;
+  padding-bottom: 10px;
+  text-shadow: 2px 2px #ffff00;
+}
+
+.content h3 {
+  color: #008000;
+  font-family: "Arial Black", sans-serif;
+  background: linear-gradient(to right, #ffff00, #ff8800);
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+/* BLINK ANIMATION */
+.blink {
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* 90s BUTTON STYLING */
+.button-90s {
+  background: linear-gradient(180deg, #c0c0c0 0%, #808080 100%);
+  border: 3px outset #c0c0c0;
+  padding: 8px 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+.button-90s:hover {
+  border-style: inset;
+  background: linear-gradient(180deg, #808080 0%, #c0c0c0 100%);
+}
+
+.button-90s:active {
+  border-style: inset;
+}
+
+/* HORIZONTAL RULES */
+hr {
+  height: 10px;
+  background: linear-gradient(
+    to right,
+    #ff0000,
+    #ff8800,
+    #ffff00,
+    #00ff00,
+    #00ffff,
+    #0000ff,
+    #ff00ff
+  );
+  border: none;
+  border-radius: 5px;
+}
+
+/* LINK STYLING */
+a {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #800080;
+}
+
+a:hover {
+  color: #ff0000;
+  text-decoration: underline overline;
+}
+
+/* ICON LIST */
+.icon-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icon-list li {
+  background: linear-gradient(135deg, #808080 0%, #c0c0c0 50%, #808080 100%);
+  border: 3px outset #c0c0c0;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s;
+}
+
+.icon-list li:hover {
+  border-style: inset;
+  transform: translate(2px, 2px);
+}
+
+.icon-list svg {
+  width: 40px;
+  height: 40px;
+  fill: #000080;
+}
+
+.icon-list a svg {
+  fill: #000080;
+}
+
+.icon-list li:hover svg {
+  fill: #ff0000;
+}
+
+/* VISITOR COUNTER */
+.counter-section {
+  text-align: center;
+  padding: 15px;
+  background: #000000;
+  margin: 10px;
+  border: 3px ridge #808080;
+}
+
+.counter {
+  font-family: "Courier New", monospace;
+  font-size: 1.5em;
+  color: #00ff00;
+  background: #000000;
+  padding: 10px 20px;
+  border: 2px inset #404040;
+  display: inline-block;
+  letter-spacing: 3px;
+}
+
+/* GUESTBOOK / WEBRINGS SECTION */
+.webring-section {
+  text-align: center;
+  background: #ffffcc;
+  border: 3px double #8b4513;
+  padding: 15px;
+  margin: 10px;
+}
+
+.webring-section img {
+  vertical-align: middle;
+}
+
+/* UNDER CONSTRUCTION */
+.construction {
+  text-align: center;
+  padding: 20px;
+  background: repeating-linear-gradient(
+    45deg,
+    #ffd700,
+    #ffd700 10px,
+    #000000 10px,
+    #000000 20px
+  );
+  border: 3px solid #000000;
+  margin: 10px;
+}
+
+.construction-inner {
+  background: #ffff00;
+  padding: 15px;
+  border: 2px solid #000000;
+}
+
+/* TABLES - 90s STYLE */
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #e0e0e0;
+}
+
+.specs-table th {
+  background: linear-gradient(180deg, #000080 0%, #0000a0 100%);
+  color: #ffffff;
+  padding: 10px;
+  border: 2px outset #4040ff;
+  font-family: "Arial", sans-serif;
+}
+
+.specs-table td {
+  padding: 8px;
+  border: 1px solid #808080;
+  font-family: "Courier New", monospace;
+  color: #000000;
+}
+
+.specs-table tr:nth-child(even) {
+  background: #c0c0c0;
+}
+
+.specs-table tr:hover {
+  background: #ffff00;
+}
+
+/* FIRE TEXT */
+.fire-text {
+  background: linear-gradient(to bottom, #ff0000 0%, #ff8800 50%, #ffff00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* SIDEBAR BADGES */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  background: #c0c0c0;
+  border: 2px inset #808080;
+  margin: 10px;
+}
+
+.badge {
+  background: linear-gradient(180deg, #e0e0e0 0%, #a0a0a0 100%);
+  border: 2px outset #c0c0c0;
+  padding: 8px 12px;
+  font-size: 0.8em;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  text-align: center;
+}
+
+/* EMAIL ME GIF STYLE */
+.email-button {
+  display: inline-block;
+  background: linear-gradient(to right, #ff0000, #ff8800, #ffff00);
+  padding: 15px 30px;
+  border: 4px outset #ffcc00;
+  font-family: "Comic Sans MS", cursive;
+  font-size: 1.3em;
+  color: #000000;
+  text-decoration: none;
+  animation: pulse 0.5s infinite alternate;
+  text-shadow: 1px 1px #ffffff;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* BICYCLE IMAGE STYLING */
+.bike-img {
+  border: 5px ridge #8b4513;
+  padding: 5px;
+  background: #ffffff;
+  box-shadow: 5px 5px 0 #000000;
+}
+
+/* WELCOME SECTION */
+.welcome {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff00ff 0%, #00ffff 50%, #ffff00 100%);
+  border: 5px ridge #c0c0c0;
+  margin: 10px;
+}
+
+.welcome h2 {
+  color: #ffffff;
+  text-shadow: 3px 3px #000000, -2px -2px #ff0000;
+  font-size: 2em;
+  margin: 0;
+  border: none;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  background: #000080;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 0.9em;
+  border-top: 3px ridge #808080;
+}
+
+.footer a {
+  color: #00ffff;
+}
+
+/* SPINNING STAR DECORATION */
+.star {
+  display: inline-block;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* AWARD RIBBON */
+.award {
+  display: inline-block;
+  background: linear-gradient(180deg, #ffd700 0%, #ffa500 100%);
+  border: 3px double #8b4513;
+  padding: 10px 20px;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  color: #000000;
+  text-align: center;
+  box-shadow: 3px 3px 0 #000000;
+}
+
