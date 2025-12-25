@@ -1,4 +1,3 @@
-/* 90s TILED STARFIELD BACKGROUND */
 body {
   background-color: #000080;
   background-image: radial-gradient(white 1px, transparent 1px),
@@ -11,7 +10,6 @@ body {
   padding: 20px;
 }
 
-/* MAIN CONTAINER - BEVELED TABLE LOOK */
 .main-container {
   max-width: 800px;
   margin: 0 auto;
@@ -21,7 +19,6 @@ body {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* HEADER BAR */
 .header-bar {
   background: linear-gradient(to right, #000080, #0000ff, #000080);
   padding: 10px;
@@ -62,7 +59,6 @@ body {
   }
 }
 
-/* MARQUEE STYLING */
 .marquee-container {
   background: #000000;
   padding: 8px;
@@ -89,7 +85,6 @@ body {
   }
 }
 
-/* CONTENT AREA */
 .content {
   background: #ffffff;
   padding: 20px;
@@ -114,7 +109,6 @@ body {
   display: inline-block;
 }
 
-/* BLINK ANIMATION */
 .blink {
   animation: blink 1s steps(2, start) infinite;
 }
@@ -125,7 +119,6 @@ body {
   }
 }
 
-/* 90s BUTTON STYLING */
 .button-90s {
   background: linear-gradient(180deg, #c0c0c0 0%, #808080 100%);
   border: 3px outset #c0c0c0;
@@ -148,7 +141,6 @@ body {
   border-style: inset;
 }
 
-/* HORIZONTAL RULES */
 hr {
   height: 10px;
   background: linear-gradient(
@@ -165,7 +157,6 @@ hr {
   border-radius: 5px;
 }
 
-/* LINK STYLING */
 a {
   color: #0000ff;
   font-weight: bold;
@@ -221,7 +212,6 @@ a:hover {
   fill: #ff0000;
 }
 
-/* VISITOR COUNTER */
 .counter-section {
   text-align: center;
   padding: 15px;
@@ -241,7 +231,6 @@ a:hover {
   letter-spacing: 3px;
 }
 
-/* GUESTBOOK / WEBRINGS SECTION */
 .webring-section {
   text-align: center;
   background: #ffffcc;
@@ -254,7 +243,6 @@ a:hover {
   vertical-align: middle;
 }
 
-/* UNDER CONSTRUCTION */
 .construction {
   text-align: center;
   padding: 20px;
@@ -275,7 +263,6 @@ a:hover {
   border: 2px solid #000000;
 }
 
-/* TABLES - 90s STYLE */
 .specs-table {
   width: 100%;
   border-collapse: collapse;
@@ -305,7 +292,6 @@ a:hover {
   background: #ffff00;
 }
 
-/* FIRE TEXT */
 .fire-text {
   background: linear-gradient(to bottom, #ff0000 0%, #ff8800 50%, #ffff00 100%);
   -webkit-background-clip: text;
@@ -315,7 +301,6 @@ a:hover {
   font-size: 1.2em;
 }
 
-/* SIDEBAR BADGES */
 .badges {
   display: flex;
   flex-wrap: wrap;
@@ -336,8 +321,6 @@ a:hover {
   color: #000000;
   text-align: center;
 }
-
-/* EMAIL ME GIF STYLE */
 .email-button {
   display: inline-block;
   background: linear-gradient(to right, #ff0000, #ff8800, #ffff00);
@@ -360,7 +343,6 @@ a:hover {
   }
 }
 
-/* BICYCLE IMAGE STYLING */
 .bike-img {
   border: 5px ridge #8b4513;
   padding: 5px;
@@ -368,7 +350,6 @@ a:hover {
   box-shadow: 5px 5px 0 #000000;
 }
 
-/* WELCOME SECTION */
 .welcome {
   text-align: center;
   padding: 20px;
@@ -385,7 +366,6 @@ a:hover {
   border: none;
 }
 
-/* FOOTER */
 .footer {
   text-align: center;
   background: #000080;
@@ -399,7 +379,6 @@ a:hover {
   color: #00ffff;
 }
 
-/* SPINNING STAR DECORATION */
 .star {
   display: inline-block;
   animation: spin 2s linear infinite;
@@ -414,7 +393,6 @@ a:hover {
   }
 }
 
-/* AWARD RIBBON */
 .award {
   display: inline-block;
   background: linear-gradient(180deg, #ffd700 0%, #ffa500 100%);
